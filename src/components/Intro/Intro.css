@@ -1,7 +1,8 @@
 .Intro {
   display: flex;
   height: 77vh;
-  margin-top: 6rem;
+  margin-top: 4rem;
+  user-select: none;
 }
 
 /* left side styling */
@@ -34,7 +35,7 @@
   margin-top: 10px;
 }
 .i-button {
-  width: 6rem;
+  width: 7rem;
   height: 2rem;
 }
 .i-icons {
@@ -98,6 +99,7 @@
     flex-direction: column;
     gap: 7rem;
     height: 64rem;
+    margin-top: 2rem;
   }
 
   .i-right {
