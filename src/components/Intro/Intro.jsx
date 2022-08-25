@@ -7,7 +7,6 @@ import glassesimoji from '../../img/glassesimoji.png'
 import thumbup from '../../img/thumbup.png'
 import crown from '../../img/crown.png'
 import FloatinDiv from '../FloatingDiv/FloatingDiv'
-import Github from '../../img/github.png'
 import LinkedIn from '../../img/linkedin.png'
 import Instagram from '../../img/instagram.png'
 import { themeContext } from '../../Context'
@@ -39,8 +38,20 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className='i-icons'>
-          <img src={LinkedIn} alt='' />
-          <img src={Instagram} alt='' />
+          <a
+            href='http://www.linkedin.com/in/valentinLallana'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <img src={LinkedIn} alt='' />
+          </a>
+          <a
+            href='https://www.instagram.com/valen.img/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <img src={Instagram} alt='' />
+          </a>
         </div>
       </div>
       {/* right image side */}
@@ -63,7 +74,7 @@ const Intro = () => {
           transition={transition}
           className='floating-div'
         >
-          <FloatinDiv img={crown} text1='Web' text2='Developer' />
+          <FloatinDiv img={crown} text1='Photographer' text2='' />
         </motion.div>
 
         {/* animation */}
@@ -74,7 +85,7 @@ const Intro = () => {
           className='floating-div'
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1='Best Design' text2='Award' />
+          <FloatinDiv img={thumbup} text1='Excellent' text2='Service' />
         </motion.div>
 
         <div className='blur' style={{ background: 'rgb(238 210 255)' }}></div>
