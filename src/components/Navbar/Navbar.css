@@ -43,6 +43,7 @@
 
 .n-button {
   flex: 2;
+  padding: .5rem 2rem;
 }
 
 @media screen and (max-width: 480px) {
