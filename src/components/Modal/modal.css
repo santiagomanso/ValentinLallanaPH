@@ -54,3 +54,12 @@
     background-repeat:no-repeat;
     background-position: 50% 50%;
 }
+
+@media screen and (max-width: 480px){
+    .modal-content{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;    
+        overflow: hidden;   
+    }
+  }
