@@ -13,7 +13,6 @@ import { Pagination, Navigation } from 'swiper'
 import { useState } from 'react'
 
 const Modal = ({ open, children, close, albumType }) => {
-  const [active, setActive] = useState(albumType)
   console.log(imgsUrban.length)
 
   if (!open) return null
