@@ -7,15 +7,8 @@ import Humble from '../../img/humble.png'
 import { themeContext } from '../../Context'
 import { motion } from 'framer-motion'
 import Resume from './resume.pdf'
-import Modal from '../Modal/Modal'
-import { useState } from 'react'
 
 const Services = () => {
-  const [open, setOpen] = useState(false)
-
-  const handlerModal = () => {
-    setOpen(true)
-  }
   // context
   const theme = useContext(themeContext)
   const darkMode = theme.state.darkMode
@@ -33,11 +26,11 @@ const Services = () => {
         {/* dark mode */}
         <span style={{ color: darkMode ? 'white' : '' }}>Portfolio</span>
         <span>Albums</span>
-        <spane>
+        <span>
           Here is my new collection of recents event i attended
           <br />
           You will also find some cool outdoor shoots!
-        </spane>
+        </span>
         <a href={Resume} download>
           <button className='button s-button'>Download CV</button>
         </a>
@@ -47,7 +40,6 @@ const Services = () => {
       <div className='cards'>
         {/* first card */}
         <motion.div
-          onClick={handlerModal}
           initial={{ left: '25rem' }}
           whileInView={{ left: '20rem', top: '-0.4rem' }}
           transition={transition}
@@ -60,9 +52,8 @@ const Services = () => {
         </motion.div>
         {/* second card */}
         <motion.div
-          onClick={handlerModal}
           initial={{ left: '-11rem', top: '12rem' }}
-          whileInView={{ left: '-5rem' }}
+          whileInView={{ left: '-11rem', top: '13rem' }}
           transition={transition}
         >
           <Card
@@ -76,13 +67,15 @@ const Services = () => {
         {/* 3rd */}
         <motion.div
           initial={{ top: '24rem', left: '20rem' }}
-          whileInView={{ left: '15rem', top: '65%' }}
+          whileInView={{ left: '18.8rem', top: '65%' }}
           transition={transition}
         >
           <Card
             emoji={Humble}
             heading={'Sports'}
-            detail={'Tennis club, marathons & Surfing'}
+            detail={
+              'Coverage from events such as tennis chamionships, marathons & Surfing'
+            }
             color='rgba(252, 166, 31, 0.45)'
           />
         </motion.div>
@@ -91,9 +84,6 @@ const Services = () => {
           style={{ background: 'var(--purple)' }}
         ></div>
       </div>
-      <Modal open={open} close={() => setOpen(false)}>
-        <span>la caca</span>
-      </Modal>
     </div>
   )
 }

@@ -6,11 +6,16 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
+import { imgsUrban, imgsNature, imgsSports } from '../../data'
 
 // import required modules
 import { Pagination, Navigation } from 'swiper'
+import { useState } from 'react'
 
-const Modal = ({ open, children, close }) => {
+const Modal = ({ open, children, close, albumType }) => {
+  const [active, setActive] = useState(albumType)
+  console.log(imgsUrban.length)
+
   if (!open) return null
   return (
     <div className='modal-overlay'>
@@ -25,19 +30,11 @@ const Modal = ({ open, children, close }) => {
             modules={[Pagination, Navigation]}
             className='mySwiper'
           >
-            <SwiperSlide>
-              <div className='swiper-header'>
-                <h3>Urban</h3>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
+            {imgsUrban.map((img, index) => (
+              <SwiperSlide key={index}>
+                <img src={img} alt='image1' className='modal-img' />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
