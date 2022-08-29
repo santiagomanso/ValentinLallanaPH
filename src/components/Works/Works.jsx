@@ -5,6 +5,7 @@ import Fiverr from '../../img/fiverr.png'
 import Amazon from '../../img/amazon.png'
 import Shopify from '../../img/Shopify.png'
 import Facebook from '../../img/Facebook.png'
+import { GiDoorRingHandle } from 'react-icons/gi'
 import { themeContext } from '../../Context'
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
@@ -21,22 +22,18 @@ const Works = () => {
         <div className='awesome'>
           {/* dark Mode */}
           <span style={{ color: darkMode ? 'white' : '' }}>
-            Works for All these
+            The perfect shot transmit
           </span>
-          <span>Brands & Clients</span>
+          <span>Emotions & Feelings</span>
           <span>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+            Wait for the perfect moment and shoot an array of photos
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
+            That later will be subject to color correction will ensure
             <br />
-            y dummy text of printingLorem
+            that what the subject is feeling will be for ever captured
             <br />
-            ispum is simpley dummy text of printing
+            And brought to you in different ways, Digital or Printed
           </span>
-          <Link to='contact' smooth={true} spy={true}>
-            <button className='button s-button'>Hire Me</button>
-          </Link>
           <div
             className='blur s-blur1'
             style={{ background: '#ABF1FF94' }}
@@ -54,7 +51,7 @@ const Works = () => {
           className='w-mainCircle'
         >
           <div className='w-secCircle'>
-            <img src={Upwork} alt='' />
+            <GiDoorRingHandle />
           </div>
           <div className='w-secCircle'>
             <img src={Fiverr} alt='' />

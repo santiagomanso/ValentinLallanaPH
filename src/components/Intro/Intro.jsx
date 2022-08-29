@@ -33,7 +33,7 @@ const Intro = () => {
             through my lenses.
           </span>
         </div>
-        <Link to='contact' smooth={true} spy={true}>
+        <Link to='services' smooth={true} spy={true}>
           <button className='button i-button'>my albums!</button>
         </Link>
         {/* social icons */}

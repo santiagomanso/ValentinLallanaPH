@@ -29,7 +29,6 @@ function App() {
       <Floating />
       <Intro />
       <Services />
-      <Works />
       <Testimonial />
       <Contact />
       <Footer />

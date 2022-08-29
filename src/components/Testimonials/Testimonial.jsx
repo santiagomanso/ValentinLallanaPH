@@ -15,7 +15,7 @@ const Testimonial = () => {
     {
       img: profilePic1,
       review:
-        'He really managed to capture how we warm-up and have a nice and chill training session with my teammate Marko. Valentin is an Easy to work with kinda guy!',
+        'He really managed to capture how we warm-up and have a nice and chill training session with my teammate Marko at proSport 24 Berlin club. Valentin is an easy to work with kinda guy!',
       name: 'Santiago, tennis player',
     },
     {
