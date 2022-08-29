@@ -15,7 +15,7 @@ const navbar = () => {
         <nav className='n-list'>
           <ul style={{ listStyleType: 'none' }}>
             <li>
-              <Link activeClass='active' to='Navbar' spy={true} smooth={true}>
+              <Link to='Navbar' spy={true} smooth={true}>
                 Home
               </Link>
             </li>
@@ -34,11 +34,13 @@ const navbar = () => {
                 Testimonial
               </Link>
             </li>
+            <li>
+              <Link to='contact' spy={true} smooth={true}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </nav>
-        <Link to='contact' spy={true} smooth={true}>
-          <button className='button n-button'>Contact</button>
-        </Link>
       </div>
     </div>
   )

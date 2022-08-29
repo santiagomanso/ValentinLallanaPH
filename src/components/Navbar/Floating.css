@@ -1,14 +1,13 @@
 .phone-nav{
-    background: rgba(0, 0, 0, 0.03);
+    display: flex;
+    background: rgba(0, 0, 0, 0.3);
     width: max-content;
-    display: block;
     padding: 0.7rem 1.7rem;
     z-index: 2;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     bottom: 2rem;
-    display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(12px);
@@ -19,8 +18,8 @@
     padding: 0.9rem;
     border-radius: 50%;
     display: flex;
-    color: var(--color-light);
-    font-size: 1.1rem;
+    color: white;
+    font-size: 1.3rem;
 }
 
 .phone-nav a:hover{
@@ -29,5 +28,12 @@
 
 .phone-nav a.active{
     background: rgba(0, 0, 0, 0.05);
-    color: var(--black)
+    color: var(--orange);    
 }
+
+@media screen and (max-width: 480px) {
+    .phone-nav {
+      display: flex;
+    }
+  }
+  

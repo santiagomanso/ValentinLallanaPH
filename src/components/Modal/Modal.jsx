@@ -11,9 +11,28 @@ import { imgsUrban, imgsNature, imgsSports } from '../../data'
 // import required modules
 import { Pagination, Navigation } from 'swiper'
 import { useState } from 'react'
+import { useEffect } from 'react'
 
 const Modal = ({ open, children, close, albumType }) => {
-  console.log(imgsUrban.length)
+  const [array, setArray] = useState([])
+
+  useEffect(() => {
+    switch (albumType) {
+      case 'Urban': {
+        setArray(imgsUrban)
+        break
+      }
+      case 'Sports': {
+        setArray(imgsSports)
+        break
+      }
+      case 'Nature': {
+        setArray(imgsNature)
+        break
+      }
+      default:
+    }
+  }, [albumType, array])
 
   if (!open) return null
   return (
@@ -29,7 +48,7 @@ const Modal = ({ open, children, close, albumType }) => {
             modules={[Pagination, Navigation]}
             className='mySwiper'
           >
-            {imgsUrban.map((img, index) => (
+            {array.map((img, index) => (
               <SwiperSlide key={index}>
                 <img src={img} alt='image1' className='modal-img' />
               </SwiperSlide>

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import './Floating.css'
-import { AiOutlineHome } from 'react-icons/ai'
-import { AiOutlineUser } from 'react-icons/ai'
-import { BiBook } from 'react-icons/bi'
+import { AiOutlineHome, AiOutlineStar, AiFillFolderOpen } from 'react-icons/ai'
+import { GrGallery } from 'react-icons/gr'
 import { RiSuitcaseLine } from 'react-icons/ri'
 import { BiMessageSquareDetail } from 'react-icons/bi'
 import { Link } from 'react-scroll'
@@ -22,34 +21,28 @@ const Floating = () => {
       </Link>
       <Link
         to='services'
-        spy={false}
         smooth={true}
         onClick={() => setActiveNav('#about')}
         className={activeNav === '#about' ? 'active' : ''}
       >
-        <AiOutlineUser />
+        <AiFillFolderOpen />
       </Link>
-      <a
-        href='#experience'
-        onClick={() => setActiveNav('#experience')}
-        className={activeNav === '#experience' ? 'active' : ''}
+      <Link
+        to='testimonial'
+        smooth={true}
+        onClick={() => setActiveNav('#testimonial')}
+        className={activeNav === '#testimonial' ? 'active' : ''}
       >
-        <BiBook />
-      </a>
-      <a
-        href='#portfolio'
-        onClick={() => setActiveNav('#portfolio')}
-        className={activeNav === '#portfolio' ? 'active' : ''}
-      >
-        <RiSuitcaseLine />
-      </a>
-      <a
-        href='#contact'
+        <AiOutlineStar />
+      </Link>
+      <Link
+        to='contact'
+        smooth={true}
         onClick={() => setActiveNav('#contact')}
         className={activeNav === '#contact' ? 'active' : ''}
       >
-        <BiMessageSquareDetail />
-      </a>
+        <AiOutlineHome />
+      </Link>
     </nav>
   )
 }

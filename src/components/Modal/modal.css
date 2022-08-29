@@ -6,7 +6,7 @@
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .9);
     z-index: 1000;
 }
 
@@ -15,7 +15,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(230deg, rgba(23,24,29,1) 0%, rgba(84,90,107,1) 24%, rgba(85,73,61,1) 72%, rgba(23,24,29,1) 91%);
+    background: linear-gradient(230deg, rgba(23,24,29,.2) 0%, rgba(84,90,107,.2) 24%, rgba(85,73,61,.2) 72%, rgba(23,24,29,.2) 91%);
     width: 60%;
     height: 75%;
     border-radius: 20px;    

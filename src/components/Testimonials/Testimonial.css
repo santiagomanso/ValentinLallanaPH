@@ -35,20 +35,33 @@
     justify-content: space-evenly;
     padding: 2rem;
     width: 30rem;
-    height: 12rem;
+    height: 18rem;
     /* styles same as work.css */
     background: rgba(255, 255, 255, 0.26);
-    border: 7px solid var(--blueCard);
+    border: 5px solid var(--blueCard);
     box-shadow: var(--boxShadow);
     border-radius: 20px;
 }
-.testimonial>img{
-    width: 6rem;
-    height: 6rem;
+
+.testimonial-img-container{
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    outline: 5px solid var(--orange);
+    background: rgba(0, 0, 0, .9);
     border-radius: 100%;
 }
+.testimonial-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
 .testimonial>span{
-    color: var(--gray);
+    color: ghostwhite;
 }
 
 

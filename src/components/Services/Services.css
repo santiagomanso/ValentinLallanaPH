@@ -3,11 +3,9 @@
   padding: 0 3rem 0 3rem;
   display: flex;
   height: 30rem;
-  margin-bottom: 8rem;
-  margin-top: 9rem;
-  margin-bottom: 13rem;
+  
   /* scroll view */
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 /* left side */
 .awesome {
@@ -59,6 +57,7 @@
 @media screen and (max-width: 480px) {
   .services {
     margin-top: 0;
+    margin-bottom: 10rem;
     flex-direction: column;
     gap: 5rem;
     height: 66rem;

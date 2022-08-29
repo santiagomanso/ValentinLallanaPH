@@ -1,10 +1,10 @@
 .n-wrapper {
+  position: sticky;
   height: 10vh;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
-  top: 0;
   user-select: none;
+  padding-top: 3.5rem;
 }
 .n-left {
   flex: 1;
@@ -27,7 +27,6 @@
 }
 
 .n-list {
-  position: sticky;
   flex: 10;
 }
 .n-list > ul {
