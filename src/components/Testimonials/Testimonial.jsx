@@ -8,7 +8,7 @@ import 'swiper/css/pagination'
 import profilePic1 from '../../img/profile1.png'
 import profilePic2 from '../../img/profile2.jpg'
 import profilePic3 from '../../img/profile3.jpg'
-import profilePic4 from '../../img/profile4.jpg'
+import profilePic4 from '../../img/profile4.png'
 
 const Testimonial = () => {
   const clients = [
@@ -16,21 +16,23 @@ const Testimonial = () => {
       img: profilePic1,
       review:
         'He really managed to capture how we warm-up and have a nice and chill training session with my teammate Marko. Valentin is an Easy to work with kinda guy!',
-      name: 'Santiago',
+      name: 'Santiago, tennis player',
     },
     {
       img: profilePic2,
-      review: 'I',
+      review: `We hired Valentin for our wedding and we don't regret it! He has a great eye and many ideas for taking photos. Always willing to work, open with schedules, never a problem! Gracias Val 😄, we really love your shots!`,
+      name: 'Steph',
     },
     {
       img: profilePic3,
-      review:
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.',
+      review: `Valentin is a great photographer! Every time I've worked with him we've had amazing sessions. It shows that he likes it! I definitely recommend it.`,
+      name: 'Nachos, DJ.',
     },
     {
       img: profilePic4,
       review:
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.',
+        'Good to see you again, mate! With Valentín we studied photography together in the year 202. He is a great person, super friendly, and very passionate about photography. I also remember that you really liked being a Community Manager, I hope you continue with that! Hope to see you soon, friend!',
+      name: 'Esteban',
     },
   ]
 
