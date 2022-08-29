@@ -31,7 +31,7 @@ const Testimonial = () => {
     {
       img: profilePic4,
       review:
-        'Good to see you again, mate! With Valentín we studied photography together in the year 202. He is a great person, super friendly, and very passionate about photography. I also remember that you really liked being a Community Manager, I hope you continue with that! Hope to see you soon, friend!',
+        'Good to see you again, mate! With Valentín we studied photography together in the year 2020. He is a great person, super friendly, and very passionate about photography. I also remember that you really liked being a Community Manager, I hope you continue with that! Hope to see you soon, friend!',
       name: 'Esteban',
     },
   ]
